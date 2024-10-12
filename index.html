@@ -3,157 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adesoye Adegoke - Software Engineer</title>
+    <title>Adegoke Adesoye - Software Engineer</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <!-- Sidebar -->
-        <nav class="sidebar">
-            <div class="logo">
-                <h1 style="margin: 10px;">A</h1>
-                <p>Adesoye</p>
-            </div>
+    <header>
+        <nav>
+            <div class="logo">Adegoke</div>
             <ul>
-                <li><a href="#" onclick="showAboutModal()">About</a></li>
-                <li><a href="#" onclick="showSkillsModal()">My Skills</a></li>
-                <li><a href="#" onclick="projectsModal()">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-                  
         </nav>
+    </header>
 
-        <!-- Main Content -->
-        <div class="main-content">
-            <div class="intro">
-                <h2>Hi, <br> I'm <span class="highlight">Adesoye Adegoke</span>,<br> Software Engineer</h2>
-                <a href="#" class="btn-contact" onclick="showContactModal()">Contact me!</a>
-            </div>
-        </div>
-    </div>
+    <main>
+        <section id="hero">
+            <img src="./software-developer-6521720_1280.jpg" style="width: 200px; height: 200px; border-radius: 50%;" alt="image">
+            <h1>Hi, I'm <span class="highlight">Adegoke Adesoye</span></h1>
+            <h2>Senior Software Engineer</h2>
+            <a href="#contact" class="cta-button">Get in touch</a>
+        </section>
 
-    <!-- About Modal -->
-    <div id="aboutModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('aboutModal')">&times;</span>
+        <section id="about">
             <h2>About Me</h2>
-            <p>Expert software development professional with 5 years of experience in building robust, well-performing applications. Actively seeks opportunities to expand skills and improve designs.</p>
-        </div>
-    </div>
-
-    <!-- Skills Modal -->
-    <div id="skillsModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('skillsModal')">&times;</span>
-            <h2>My Skills</h2>
-            <div class="skills-container">
-                <ul class="skills-list">
-                    <li>- Java</li>
-                    <li>- Python</li>
-                    <li>- Kubernetes</li>
-                    <li>- PostgreSQL</li>
-                    <li>- Node.js</li>
-                    <li>- Spring Boot</li>
-                    <li>- Fast API</li>
-                    <li>- Flask</li>
-                    <li>- React.js</li>
-                    <li>- MongoDB</li>
-                    <li>- CSS</li>
-                    <li>- MySQL</li>
-                    <li>- MuleSoft</li>
-                    <li>- Hibernate</li>
-                </ul>
-                <ul class="skills-list">
-                    <li>- Microsoft Azure API Management Gate</li>
-                    <li>- Oracle Service Bus</li>
-                    <li>- IBM Watson Assistant</li>
-                    <li>- JSP</li>
-                    <li>- Docker</li>
-                    <li>- Web Security</li>
-                    <li>- JDBC</li>
-                    <li>- WebLogic Oracle</li>
-                    <li>- PL/SQL</li>
-                    <li>- Git</li>
-                    <li>- JIRA</li>
-                    <li>- Postman</li>
-                </ul>
-                
+            <div class="project">
+                <p>
+                    I am an experienced and dedicated Senior Software Engineer with over five years of 
+                    expertise in designing, developing, and delivering high-performance 
+                    applications. Throughout my career, I have demonstrated a passion for software development, 
+                    coupled with a commitment to building scalable, secure, and efficient systems. I thrive in dynamic, 
+                    fast-paced environments, and actively seek opportunities to enhance my skills and drive technical 
+                    excellence.
+                </p>
+                <p style="margin-top: 20px;">
+                    I have a diverse technical skill set spanning across various languages, frameworks, and platforms, 
+                    with a focus on backend development, cloud technologies, and modern software architectures. 
+                    My hands-on experience ranges from full-stack application development 
+                    to leading complex system migrations and integration projects.
+                </p>
             </div>
-        </div>
-    </div>
-    
+        </section>
 
-    <div id="projectsModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('projectsModal')">&times;</span>
-            <h2>Project Details</h2><br>
-            <p style="line-height: 1.5;">Lead developer in the development of Rafiki Chatbot Training and Workflow Portal connected to IBM Watson. It is in use to train and maximize the precision accuracy of the chatbot from base 0 to over 85% <a style="color: #e0e0e0;" href="https://ice.ecobank.com/chatbotui/v2" target="_blank">click here to access project</a></p><br>
-            <p style="line-height: 1.5;">Involved in the development of an In-house built Customer Service Agents chat portal to interact with the financial institution customer base...</p><br>
-            <p style="line-height: 1.5;">Lead backend developer in the migration of all the bank services from SOA architecture to microservice architecture using Spring Boot, Docker...</p>
+        <section id="skills">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">Java</div>
+                <div class="skill">Python</div>
+                <div class="skill">Kubernetes</div>
+                <div class="skill">PostgreSQL</div>
+                <div class="skill">Node.js</div>
+                <div class="skill">Spring Boot</div>
+                <div class="skill">Fast API</div>
+                <div class="skill">Flask</div>
+                <div class="skill">React.js</div>
+                <div class="skill">MongoDB</div>
+                <div class="skill">CSS</div>
+                <div class="skill">MySQL</div>
+                <div class="skill">MuleSoft</div>
+                <div class="skill">Hibernate</div>
+                <div class="skill">Azure API Management</div>
+                <div class="skill">Oracle Service Bus</div>
+                <div class="skill">IBM Watson Assistant</div>
+                <div class="skill">Docker</div>
+                <div class="skill">Web Security</div>
+                <div class="skill">Git</div>
+            </div>
+        </section>
 
-        </div>
-    </div>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Rafiki Chatbot Training and Workflow Portal</h3>
+                <p>Lead developer in the development of Rafiki Chatbot Training and Workflow Portal connected to IBM Watson. It is in use to train and maximize the precision accuracy of the chatbot from base 0 to over 85%.</p>
+                <a href="https://ice.ecobank.com/chatbotui/v2" target="_blank" class="project-link">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Customer Service Agents Chat Portal</h3>
+                <p>Involved in the development of an In-house built Customer Service Agents chat portal to interact with the financial institution customer base.</p>
+            </div>
+            <div class="project">
+                <h3>Microservices Migration</h3>
+                <p>Lead backend developer in the migration of all the bank services from SOA architecture to microservice architecture using Spring Boot, Docker.</p>
+            </div>
+        </section>
 
-    <div id="contactModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('contactModal')">&times;</span>
-            <div class="contact-card">
-                <div class="contact-item">
-                    <img src="https://img.icons8.com/ios-filled/24/00a0dc/linkedin.png" alt="LinkedIn Icon" />
-                    <p>
-                        <strong>Linkedin:</strong> 
-                        <a href="https://www.linkedin.com/in/adegoke-adesoye-a078b115b" target="_blank" class="contact-link">linkedin.com/in/adegoke-adesoye</a>
-                    </p>
-                </div>
-                
-                <div class="contact-item">
-                    <img src="https://img.icons8.com/ios-filled/24/00a0dc/phone.png" alt="Phone Icon" />
-                    <p>
-                        <strong>Phone:</strong> 
-                        <span class="contact-detail">+2347060942061</span>
-                    </p>
-                </div>
-                
-                <div class="contact-item">
-                    <img src="https://img.icons8.com/ios-filled/24/00a0dc/email.png" alt="Email Icon" />
-                    <p>
-                        <strong>Email:</strong> 
-                        <a href="mailto:anuoluwagoke@gmail.com" class="contact-link">adesoye317@gmail.com</a>
-                    </p>
-                </div>
-            </div>            
-            
-        </div>
-    </div>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/adegoke-adesoye-a078b115b" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/24/00a0dc/linkedin.png" alt="LinkedIn">
+                    LinkedIn
+                </a>
+                <a href="tel:+2347060942061">
+                    <img src="https://img.icons8.com/ios-filled/24/00a0dc/phone.png" alt="Phone">
+                    +234 706 094 2061
+                </a>
+                <a href="mailto:adesoye317@gmail.com">
+                    <img src="https://img.icons8.com/ios-filled/24/00a0dc/email.png" alt="Email">
+                    adesoye317@gmail.com
+                </a>
+            </div>
+        </section>
+    </main>
 
-    
-
-    <script>
-        function showAboutModal() {
-            document.getElementById('aboutModal').style.display = 'flex';
-        }
-
-        function showSkillsModal() {
-            document.getElementById('skillsModal').style.display = 'flex';
-        }
-        function projectsModal() {
-            document.getElementById('projectsModal').style.display = 'flex';
-        }
-
-        function closeModal(modalId) {
-            document.getElementById(modalId).style.display = 'none';
-        }
-
-        function showContactModal() {
-            document.getElementById('contactModal').style.display = 'flex';
-        }
-
-
-        window.onclick = function(event) {
-            if (event.target.classList.contains('modal')) {
-                event.target.style.display = 'none';
-            }
-        }
-    </script>
+    <footer>
+        <p>&copy; 2024 Adegoke Adesoye. All rights reserved.</p>
+    </footer>
 </body>
 </html>
